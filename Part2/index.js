@@ -11,9 +11,28 @@ function setCard() {
     console.log(card)
     card.style.color = colorInput.value
 }
-// function resetCards() {
-//     let card = document.getElementsByTagName('section')
-//     if (card.style.color !== undefined) {
-//         card.style.color = 'grey'
-//     }
-// }
+function resetCards() {
+    let diamonds = document.getElementById('diamonds')
+    if (diamonds.style.color) {
+        diamonds.style.color = 'grey'
+    }
+    let clubs = document.getElementById('clubs')
+    if (clubs.style.color) {
+        clubs.style.color = 'grey'
+    }
+    let hearts = document.getElementById('hearts')
+    if (hearts.style.color) {
+        hearts.style.color = 'grey'
+    }
+    let spades = document.getElementById('spades')
+    if (spades.style.color) {
+        spades.style.color = 'grey'
+    }
+    let id = document.getElementById('idInput')
+    console.dir(id)
+    id.value = ""
+    let color = document.getElementById('colorInput')
+    console.dir(color)
+    color.value = ""
+    
+}
